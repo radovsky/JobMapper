@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: "home#index"
+  get "users/sign_up" => "devise/registrations#new"
 end
